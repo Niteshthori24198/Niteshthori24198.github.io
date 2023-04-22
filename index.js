@@ -76,3 +76,9 @@ window.open("https://drive.google.com/file/d/1kn7-DVjiQF3dnx2Kz5fy65cjy0iqGJRu/v
        event.target.alt = "dark";
     }
   }
+
+
+  let goTOHackerrank= document.getElementById('goTOHackerrank')
+  goTOHackerrank.addEventListener('click', ()=>{
+    location.href = 'https://www.hackerrank.com/niteshkumar24011'
+  })
