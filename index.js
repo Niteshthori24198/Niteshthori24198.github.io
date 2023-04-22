@@ -38,7 +38,7 @@ function typeWriter() {
       }
   };
 
-  GitHubCalendar(".calendar", "manoharmeena123", {
+  GitHubCalendar(".calendar", "Niteshthori24198", {
     responsive: true,
     global_stats: false,
     tooltips: true,
