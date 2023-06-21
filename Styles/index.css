@@ -5,21 +5,32 @@
   flex-direction: row;
   gap: 25px;
   align-items: center;
+  border-radius: 5px;
 }
 
 #allGit>div:nth-child(1) {
   width: 50%;
+  border-radius: 5px;
 }
 
 #allGit>div:nth-child(2) {
   width: 50%;
+  border-radius: 5px;
 }
 
 #allGit div>img {
   width: 100%;
-  border: 3px solid #0078ff;
+  /* border: 1px solid #0078ff; */
   border-radius: 5px;
 }
+
+
+#allGit div>img:hover{
+  transform: scale(1.10);
+  transition: transform 1s ease;
+}
+
+
 
 #calendar {
   height: auto;
@@ -322,10 +333,12 @@ header.shadow {
 }
 
 .skills-container>div {
-  border: 5px solid #0078ff;
+  border: 1px solid gray;
   border-radius: 15px;
   padding: 30px 20px 10px;
   text-align: center;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   
 }
 
@@ -376,7 +389,7 @@ header.shadow {
 }
 
 .project-card {
-  border: 5px solid #0078ff;
+  border: 1px solid gray;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -682,12 +695,12 @@ header.shadow {
 
   #allGit div>img {
     width: 100%;
-    border: 3px solid #0078ff;
+    /* border: 3px solid #0078ff; */
     border-radius: 3px;
   }
 
   .skills-container>div {
-    border: 5px solid #0078ff;
+    /* border: 5px solid #0078ff; */
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 5px 15px rgb(73 73 73 / 35%);
