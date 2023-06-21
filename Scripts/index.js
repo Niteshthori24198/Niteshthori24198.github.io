@@ -46,14 +46,14 @@ darkmode.onclick = () => {
 const resume = document.getElementById("resume-button-1");
 resume.onclick = (e) => {
     // e.preventDefault()
-    window.open("./Media/Nitesh_Kumar_Resume.pdf", "_blank")
+    window.open("./Media/Nitesh-Kumar-Resume.pdf", "_blank")
     // console.log("Click");
 }
 
 const containerResume = document.getElementById("resume-button-2");
 containerResume.onclick = (e) => {
     // e.preventDefault()
-    window.open("./Media/Nitesh_Kumar_Resume.pdf", "_blank")
+    window.open("./Media/Nitesh-Kumar-Resume.pdf", "_blank")
     // console.log("Click");
 }
                           
