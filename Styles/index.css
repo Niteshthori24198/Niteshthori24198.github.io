@@ -380,12 +380,15 @@ header.shadow {
 }
 
 
+
+
 #projects2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   /* height: 200vh; */
   margin: auto;
-  gap: 50px;
+  gap: 30px;
+  /* width: 100%; */
 }
 
 .project-card {
@@ -435,10 +438,17 @@ header.shadow {
 
 .project-tech-stack>div {
   display: flex;
+  /* border: 1px solid red; */
+  justify-content: center;
+  align-items: center;
 }
 
 .mongoClass {
   margin-left: -10px;
+}
+
+.awsClass{
+  margin-left: -25px;
 }
 
 .project-tech-stack>div>img {
