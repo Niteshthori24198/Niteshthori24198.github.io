@@ -42,7 +42,7 @@
 }
 .slider2 .dots2{
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   left: 0;
   color: #fff;
   width: 100%;
@@ -61,5 +61,5 @@
   transition: 0.5s;
 }
 .slider2 .dots2 li.active3{
-  width: 30px;
+  width: 15px;
 }

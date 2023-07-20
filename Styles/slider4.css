@@ -42,7 +42,7 @@
   }
   .slider4 .dots4{
     position: absolute;
-    bottom: 10px;
+    bottom: 5px;
     left: 0;
     color: #fff;
     width: 100%;
@@ -61,5 +61,5 @@
     transition: 0.5s;
   }
   .slider4 .dots4 li.active4{
-    width: 30px;
+    width: 10px;
   }
