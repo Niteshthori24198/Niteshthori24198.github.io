@@ -228,7 +228,7 @@ header.shadow {
   width: 85%;
   border: 1px solid rgb(201, 201, 201);
   margin-top: 20px;
-  transition: transform 3s ease;
+  transition: transform 2s ease;
 
   /* border: 1px solid #ddd; */
   border-radius: 50%;
