@@ -62,7 +62,7 @@
         </a>
       </li>
 
-      <div class="bx bx-sun" id="darkmode"></div>
+      <div class="bx bx-moon" id="darkmode"></div>
     </ul>
   </header>
 
@@ -916,11 +916,11 @@
   const experties = document.querySelector('.multiple-text');
   experties.style.fontSize = "24px"
 
-  let colors = ["orange", "purple", "#007bff", "aqua", "red"]
+  let colors = ["orange", "purple", "#007bff", "aqua", "red","magenta","cyan"]
 
   setInterval(() => {
     let clr = Math.floor(Math.random() * 10);
-    experties.style.color = colors[clr % 5]
+    experties.style.color = colors[clr % 7]
   }, 3000)
 
 </script>

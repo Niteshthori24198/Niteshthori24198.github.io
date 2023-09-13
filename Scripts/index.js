@@ -2,9 +2,6 @@ let header = document.querySelector("header");
 let menu = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
 
-// window.addEventListener("scroll", () => {
-//   header.classList.toggle("shadow", window.scrollY > 100);
-// });
 
 var myNav = document.getElementById('nav-menu');
 var myNav2 = document.getElementById('menu-icon');
@@ -13,10 +10,10 @@ window.onscroll = function () {
     if ( document.documentElement.scrollTop >= 15 ) {
         myNav.classList.add("nav-colored");
         myNav2.classList.add("nav-colored");
-        // myNav.classList.remove("nav-transparent");
+        //myNav.classList.remove("nav-transparent");
     } 
     else {
-        // myNav.classList.add("nav-transparent");
+        //myNav.classList.add("nav-transparent");
         myNav.classList.remove("nav-colored");
         myNav2.classList.remove("nav-colored");
     }
@@ -29,6 +26,7 @@ menu.onclick = () => {
 window.onscroll = () => {
   navbar.classList.remove("active");
 };
+
 
 // Dark Mode / light mode
 let darkmode = document.querySelector("#darkmode");
