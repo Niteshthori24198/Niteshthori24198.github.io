@@ -78,54 +78,6 @@ inputs.forEach((input) => {
 });
 
 
-// const contactName = document.getElementById("contactName");
-// const contactEmail = document.getElementById("contactEmail");
-// const contactMessage = document.getElementById("contactMessage");
-
-// const contactSubmit = document.getElementById("contactSubmit");
-// contactSubmit.onclick = async (e) => {
-//   e.preventDefault();
-//   console.log([contactName.value, contactEmail.value, contactMessage.value]);
- 
-//   const data = {
-//     service_id: 'service_cud71u7',
-//     template_id: 'template_ra4xl6w',
-//     user_id: '0',
-//     template_params: {
-//       'from_name': contactName.value,
-//       'to_name' : 'Nitesh',
-//       'message' : contactMessage.value,
-//       'from_email' : contactEmail.value
-//     }
-//   };
-
-//   try {
-
-//     let Email = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
-//       method: 'POST',
-//       body : JSON.stringify(data),
-//       headers : {
-//         'Content-type' : 'application/json'
-//       }
-//     })
-//     console.log(Email);
-
-//     if(Email.ok){
-//       console.log('Msg received');
-//       alert('Thanks for reaching out, Your email sent successfully!!')
-//     }
-    
-//   } catch (err) {
-//     console.log(err);
-//   }
-
-
-//   contactName.value = null;
-//   contactEmail.value = null;
-//   contactMessage.value = null;
-// };
-
-
 
 const contactName = document.getElementById("contactName");
 const contactEmail = document.getElementById("contactEmail");
