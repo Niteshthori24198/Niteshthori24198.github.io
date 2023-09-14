@@ -323,11 +323,11 @@ header.shadow {
 
 .skills-container {
   display: grid;
-  /* width: 80%; */
+  /* width: 95%; */
   margin: auto;
   /* border: 1px solid red; */
-  grid-template-columns: repeat(6, 1fr);
-  grid-column-gap: 40px;
+  grid-template-columns: repeat(6,1fr);
+  grid-column-gap:30px;
   grid-row-gap: 30px;
 
 }
@@ -339,7 +339,7 @@ header.shadow {
   text-align: center;
   /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  
+ 
 }
 
 .skills-container img {
@@ -667,7 +667,7 @@ header.shadow {
 
 
   .skills-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); 
     padding: 0px 0px 0px;
   }
 
