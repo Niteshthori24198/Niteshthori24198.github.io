@@ -12,7 +12,6 @@
   align-items: center;
   justify-content: center;
   /* border: 2px solid red; */
-
 }
 
 .form {
@@ -378,8 +377,7 @@ textarea.input {
   .btn {
     padding: 0.45rem 1.2rem;
   }
-
-  #contact{
-    margin-top: 300px;
-  }
 }
+
+
+

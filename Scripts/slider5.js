@@ -4,16 +4,18 @@ let next5 = document.getElementById('next5');
 let prev5 = document.getElementById('prev5');
 let dots5 = document.querySelectorAll('.slider5 .dots5 li');
 
-let lengthItems = items5.length - 1;
+let lengthItems5 = items5.length - 1;
 let active5 = 0;
 next5.onclick = function(){
-    active5 = active5 + 1 <= lengthItems ? active5 + 1 : 0;
+    active5 = active5 + 1 <= lengthItems5 ? active5 + 1 : 0;
     reloadSlider();
 }
 prev5.onclick = function(){
-    active5 = active5 - 1 >= 0 ? active5 - 1 : lengthItems;
+    active5 = active5 - 1 >= 0 ? active5 - 1 : lengthItems5;
     reloadSlider();
 }
+
+// console.log('portfolio');
 
 function reloadSlider(){
     slider5.style.left = -items5[active5].offsetLeft + 'px';

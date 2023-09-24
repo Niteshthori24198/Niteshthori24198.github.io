@@ -1,3 +1,7 @@
+
+document.getElementById('home').style.height = `${window.innerHeight}px`;
+
+
 let header = document.querySelector("header");
 let menu = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
@@ -6,17 +10,17 @@ let navbar = document.querySelector(".navbar");
 var myNav = document.getElementById('nav-menu');
 var myNav2 = document.getElementById('menu-icon');
 console.log(myNav2);
-window.onscroll = function () { 
-    if ( document.documentElement.scrollTop >= 15 ) {
-        myNav.classList.add("nav-colored");
-        myNav2.classList.add("nav-colored");
-        //myNav.classList.remove("nav-transparent");
-    } 
-    else {
-        //myNav.classList.add("nav-transparent");
-        myNav.classList.remove("nav-colored");
-        myNav2.classList.remove("nav-colored");
-    }
+window.onscroll = function () {
+  if (document.documentElement.scrollTop >= 15) {
+    myNav.classList.add("nav-colored");
+    myNav2.classList.add("nav-colored");
+    myNav.classList.remove("nav-transparent");
+  }
+  else {
+    myNav.classList.add("nav-transparent");
+    myNav.classList.remove("nav-colored");
+    myNav2.classList.remove("nav-colored");
+  }
 };
 
 
@@ -27,11 +31,12 @@ window.onscroll = () => {
   navbar.classList.remove("active");
 };
 
-
 // Dark Mode / light mode
 let darkmode = document.querySelector("#darkmode");
 
+
 darkmode.onclick = () => {
+  console.log(darkmode);
   if (darkmode.classList.contains("bx-sun")) {
     darkmode.classList.replace("bx-sun", "bx-moon");
     document.body.classList.add("active");
@@ -43,18 +48,18 @@ darkmode.onclick = () => {
 
 const resume = document.getElementById("resume-button-1");
 resume.onclick = (e) => {
-    // e.preventDefault()
-    window.open("./Media/Nitesh-Kumar-Resume.pdf", "_blank")
-    // console.log("Click");
+  // e.preventDefault()
+  window.open("./Media/Kishan-Sharma-Resume.pdf", "_blank")
+  // console.log("Click");
 }
 
 const containerResume = document.getElementById("resume-button-2");
 containerResume.onclick = (e) => {
-    // e.preventDefault()
-    window.open("./Media/Nitesh-Kumar-Resume.pdf", "_blank")
-    // console.log("Click");
+  // e.preventDefault()
+  window.open("./Media/Kishan-Sharma-Resume.pdf", "_blank")
+  // console.log("Click");
 }
-                          
+
 
 const inputs = document.querySelectorAll(".input");
 
@@ -93,15 +98,15 @@ function handleSubmit(e) {
   console.log([contactName.value, contactEmail.value, contactMessage.value]);
 
   const data = {
-    service_id: 'service_fifvwuu',
-    template_id: 'template_vx8syti',
-    user_id: 'dsOdwgfx8xnNOFOsU',
+    service_id: 'service_cud71u7',
+    template_id: 'template_z5e44h9',
+    user_id: 'JifQZqT4RWnST7CtO',
     template_params: {
       'from_name': contactName.value,
-      'to_name': 'Nitesh Kumar',
+      'to_name': 'Kishan',
       'message': contactMessage.value,
       'from_email': contactEmail.value,
-      'phone_number' : ContactPhoneNumber.value
+      'phone_number': ContactPhoneNumber.value
     }
   };
 
@@ -114,34 +119,52 @@ function handleSubmit(e) {
     },
     body: JSON.stringify(data)
   })
-  .then(res => {
+    .then(res => {
 
-    console.log('===>', res);
-    return res.text()
+      console.log('===>', res);
+      return res.text()
 
-  })
-  .then(data => {
+    })
+    .then(data => {
 
-    console.log('=====>', data);
+      console.log('=====>', data);
 
-    if(data=='OK'){
-      alert('Message Send Successfully.')
-    }else{
-      alert('Something Went Wrong! (Try After Some Time)')
-    }
+      if (data == 'OK') {
+        alert('Message Send Successfully.')
+      } else {
+        alert('Internal Server Error.')
+      }
 
-  })
-  .catch(err => {
+    })
+    .catch(err => {
 
-    console.log(err);
+      console.log(err);
 
-  })
-  .finally(() => {
-    document.getElementById('contactSubmit').innerHTML = `Send`
-    document.getElementById('contactSubmit').disabled = false;
-  })
+    })
+    .finally(() => {
+      document.getElementById('contactSubmit').innerHTML = `Send`
+      document.getElementById('contactSubmit').disabled = false;
+    })
 
 }
+
+
+
+
+
+
+const typed = new Typed('.typing1', {
+  strings: ['', 'Full Stack Web Developer', 'Backend Developer', 'Frontend Developer', 'MERN Stack Developer'],
+  typeSpeed: 100,
+  backSpeed: 60,
+  backdelay: 10000,
+  loop: true
+})
+
+const colors = ['red', '#007bff', 'orange', 'magenta', 'cyan', '#0078ff']
+setInterval(() => {
+  document.querySelector('.typing1').style.color = colors[Math.floor(Math.random() * (colors.length))]
+}, 2000)
 
 
 

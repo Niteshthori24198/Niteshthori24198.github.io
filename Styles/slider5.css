@@ -42,7 +42,7 @@
   }
   .slider5 .dots5{
     position: absolute;
-    bottom: 5px;
+    bottom: 10px;
     left: 0;
     color: #fff;
     width: 100%;
@@ -61,5 +61,5 @@
     transition: 0.5s;
   }
   .slider5 .dots5 li.active5{
-    width: 10px;
+    width: 30px;
   }

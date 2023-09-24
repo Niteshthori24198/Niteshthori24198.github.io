@@ -5,44 +5,34 @@
   flex-direction: row;
   gap: 25px;
   align-items: center;
-  border-radius: 5px;
 }
 
 #allGit>div:nth-child(1) {
   width: 50%;
-  border-radius: 5px;
 }
 
 #allGit>div:nth-child(2) {
   width: 50%;
-  border-radius: 5px;
 }
 
 #allGit div>img {
+  cursor: pointer;
   width: 100%;
-  /* border: 1px solid #0078ff; */
   border-radius: 5px;
 }
-
-
-#allGit div>img:hover{
-  transform: scale(1.10);
-  transition: transform 1s ease;
+#allGit div>img:hover {
+  transform: scale(1.05);
+  transition: transform 3s ease;
 }
-
-
 
 #calendar {
   height: auto;
-  /* border: 3px solid brown; */
-  /* margin-bottom: 50px; */
   padding-top: 0;
   padding-bottom: 0;
 }
 
 .calendar {
   padding: 1%;
-  border: 2px solid teal;
 }
 
 * {
@@ -126,6 +116,7 @@ header.shadow {
   color: var(--text-color);
   letter-spacing: 1px;
 }
+
 .logo:hover {
   letter-spacing: 2px;
   color: var(--text-color);
@@ -190,17 +181,15 @@ header.shadow {
 }
 
 #home>div:nth-child(2) {
-  width: 50%;
-  height: 50vh;
-  /* border: 2px solid red; */
+  width: 40%;
 
 }
 
 #home>div:nth-child(2) img {
   width: 100%;
-  height: 50vh;
   transition: transform 3s ease;
 }
+
 #home>div:nth-child(2) img:hover {
   transform: scale(1.05);
   cursor: pointer;
@@ -227,13 +216,15 @@ header.shadow {
 .homeImage img {
   width: 85%;
   border: 1px solid rgb(201, 201, 201);
-  margin-top: 20px;
-  transition: transform 2s ease;
+  /* margin-top: 20px; */
+  transition: transform 3s ease;
 
-  /* border: 1px solid #ddd; */
-  border-radius: 50%;
-  padding: 2px;
+  /* border: 10px solid #080808; */
+  border-radius: 100%;
+  padding: 5px;
+
 }
+
 .homeImage img:hover {
   /* transform: scale(1.1); */
   transform: scale(1.2);
@@ -314,7 +305,7 @@ header.shadow {
 /* ========================Skills====================== */
 
 
-.skills-container>div>div {
+skills-container>div>div {
   /* border: 1px solid white; */
   height: 70%;
 }
@@ -323,40 +314,39 @@ header.shadow {
 
 .skills-container {
   display: grid;
-  /* width: 95%; */
+  /* width: 80%; */
   margin: auto;
-  /* border: 1px solid red; */
-  grid-template-columns: repeat(6,1fr);
-  grid-column-gap:30px;
+  /* border: 1px solid wheat; */
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 40px;
   grid-row-gap: 30px;
-
 }
 
 .skills-container>div {
+  /* border: 5px solid #0078ff; */
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   border: 1px solid gray;
+  /* background-color: #007bff; */
   border-radius: 15px;
   padding: 30px 20px 10px;
   text-align: center;
-  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
- 
+}
+.skills-container>div:hover {
+  /* letter-spacing: 2px; */
+  cursor: pointer;  
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 }
 
 .skills-container img {
   width: 60%;
-  
+
 }
 
 .skills-container img:hover {
-  transform: scale(1.25);
-  transition: 0.8s ease;
-  /* transition: transform 3s ease; */
-  
+  transform: scale(1.2);
+  transition: transform 3s ease;
+
 }
-
-
-
-
 
 /* .special{
     width: 55%; 
@@ -380,18 +370,17 @@ header.shadow {
 }
 
 
-
-
 #projects2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   /* height: 200vh; */
   margin: auto;
-  gap: 30px;
-  /* width: 100%; */
+  gap: 50px;
 }
 
 .project-card {
+  /* border: 5px solid #0078ff; */
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   border: 1px solid gray;
   height: auto;
   display: flex;
@@ -438,17 +427,10 @@ header.shadow {
 
 .project-tech-stack>div {
   display: flex;
-  /* border: 1px solid red; */
-  justify-content: center;
-  align-items: center;
 }
 
 .mongoClass {
   margin-left: -10px;
-}
-
-.awsClass{
-  margin-left: -25px;
 }
 
 .project-tech-stack>div>img {
@@ -667,7 +649,7 @@ header.shadow {
 
 
   .skills-container {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
     padding: 0px 0px 0px;
   }
 
@@ -710,10 +692,8 @@ header.shadow {
   }
 
   .skills-container>div {
-    /* border: 5px solid #0078ff; */
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 5px 15px rgb(73 73 73 / 35%);
     margin: auto;
     padding: 20px;
     text-align: center;
@@ -779,6 +759,9 @@ header.shadow {
   .textMargine {
     margin-top: 0px;
   }
+  #contact{
+    margin-top: 280px;
+  }
 
 }
 
@@ -807,5 +790,8 @@ header.shadow {
 
   .contact-button {
     margin-left: 25%;
+  }
+  #contact{
+    margin-top: 280px;
   }
 }
