@@ -49,14 +49,14 @@ darkmode.onclick = () => {
 const resume = document.getElementById("resume-button-1");
 resume.onclick = (e) => {
   // e.preventDefault()
-  window.open("./Media/Kishan-Sharma-Resume.pdf", "_blank")
+  window.open("./Media/Nitesh-Kumar-Resume.pdf", "_blank")
   // console.log("Click");
 }
 
 const containerResume = document.getElementById("resume-button-2");
 containerResume.onclick = (e) => {
   // e.preventDefault()
-  window.open("./Media/Kishan-Sharma-Resume.pdf", "_blank")
+  window.open("./Media/Nitesh-Kumar-Resume.pdf", "_blank")
   // console.log("Click");
 }
 
