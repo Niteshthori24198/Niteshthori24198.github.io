@@ -103,7 +103,7 @@ function handleSubmit(e) {
     user_id: 'JifQZqT4RWnST7CtO',
     template_params: {
       'from_name': contactName.value,
-      'to_name': 'Kishan',
+      'to_name': 'Nitesh',
       'message': contactMessage.value,
       'from_email': contactEmail.value,
       'phone_number': ContactPhoneNumber.value
