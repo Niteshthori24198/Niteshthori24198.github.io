@@ -427,16 +427,32 @@ skills-container>div>div {
 
 .project-tech-stack>div {
   display: flex;
+ 
 }
 
 .mongoClass {
   margin-left: -10px;
 }
 
+
+
 .project-tech-stack>div>img {
   width: 100%;
+  
   /* height: 46px; */
 }
+
+
+#awsClass{
+  margin: 0px -20px;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  
+}
+
+
+
 
 @media (max-width: 991px) {
   header {
